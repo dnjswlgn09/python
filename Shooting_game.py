@@ -21,7 +21,14 @@ h = 640
 pad = pygame.display.set_mode((w,h)) #화면 생성
 pygame.display.set_caption("Shooting Game") #제목 설정
 
-pad.fill(orange)
+#####배경화면 넣기#####
+bg =pygame.image.load("background.jpg")
+pad.blit(bg,(0,0))
+
+
+
+
+
 pygame.display.update()
 
 while True:
@@ -29,38 +36,3 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
